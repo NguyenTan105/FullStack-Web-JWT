@@ -12,13 +12,13 @@ const RegisterPage = () => {
     if (res) {
       notification.success({
         message: "CREATE USER",
-        description: "success",
+        description: "Success",
       });
       navigate("/login");
     } else {
       notification.error({
         message: "CREATE USER",
-        description: "error",
+        description: "Error",
       });
     }
     console.log(">>> Success:", res);
